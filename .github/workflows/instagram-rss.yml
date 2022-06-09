@@ -15,7 +15,7 @@ jobs:
         id: rss
         uses: katydecorah/instagram-rss-action@v0.3.0
         with:
-          yourInstagram: instagram_handle
+          yourInstagram: 0xkevle
           listOfInstagrams: restorenorthbridge
       - name: Commit files
         if: ${{ success() && steps.rss.outputs.RSS_STATUS == 'success' }}
